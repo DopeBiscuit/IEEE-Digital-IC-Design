@@ -1,0 +1,1 @@
+The testbench.v file includes a testbench module for the Q1 module, including a for loop to test all 32 possibilities, to use compile both then simulate the testbench, and in the wave window click run all and then zoom fit.

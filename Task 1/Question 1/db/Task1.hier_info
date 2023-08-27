@@ -1,0 +1,9 @@
+|Task1
+A => WideXnor0.IN0
+B => WideXnor0.IN1
+D[0] => S1.IN0
+D[1] => S1.IN1
+D[2] => WideXnor0.IN2
+OUT <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

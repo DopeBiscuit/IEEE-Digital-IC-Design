@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vQ1_tb
+Z0 !s110 1693114460
+!i10b 1
+!s100 oNJLWG93W2R1IXCBibEE82
+IW@AP:@GfLG7@9`V?>RoKM2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1
+w1693112887
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1/testbench.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1/testbench.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1693114460.000000
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1/testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1/testbench.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@q1_tb
+vTask1
+R0
+!i10b 1
+!s100 gSXfLe3V<C:0mk[8k[B1K0
+IAMBXeE_i88Md:Ng3Dh3cz3
+R1
+R2
+w1693110936
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1/Q1.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1/Q1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1/Q1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 1/Q1.v|
+!i113 1
+R5
+R6
+n@task1

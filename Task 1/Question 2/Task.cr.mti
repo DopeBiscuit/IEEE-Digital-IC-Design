@@ -1,0 +1,29 @@
+{D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_adder.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module half_add
+
+Top level modules:
+	half_add
+
+} {} {}} {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/mux.v} {1 {vlog -work work -stats=none {D:\Courses and Workshops\IEEE Digital IC Design Workshop 2023\Tasks\Task 1\Question 2\mux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MUX
+
+Top level modules:
+	MUX
+
+} {} {}} {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_subtractor.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_subtractor.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module half_sub
+
+Top level modules:
+	half_sub
+
+} {} {}} {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/Q2.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/Q2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Q2
+
+Top level modules:
+	Q2
+
+} {} {}}

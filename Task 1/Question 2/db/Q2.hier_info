@@ -1,0 +1,40 @@
+|Q2
+IN0 => IN0.IN2
+IN1 => IN1.IN2
+SEL => SEL.IN2
+SUM << MUX:comb_5.o1
+CARRY << MUX:comb_6.o1
+
+
+|Q2|half_add:comb_3
+A => comb.IN0
+A => comb.IN0
+B => comb.IN1
+B => comb.IN1
+SUM <= comb.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q2|half_sub:comb_4
+A => comb.IN0
+A => comb.IN0
+B => comb.IN1
+B => comb.IN1
+DIFFERENCE <= comb.DB_MAX_OUTPUT_PORT_TYPE
+BORROW <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q2|MUX:comb_5
+m0 => ~NO_FANOUT~
+m1 => ~NO_FANOUT~
+SEL => ~NO_FANOUT~
+o1 <= <GND>
+
+
+|Q2|MUX:comb_6
+m0 => ~NO_FANOUT~
+m1 => ~NO_FANOUT~
+SEL => ~NO_FANOUT~
+o1 <= <GND>
+
+

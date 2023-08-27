@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vhalf_add
+Z0 !s110 1693109858
+!i10b 1
+!s100 <`C=:NmCJL^fmYCk?;2cH0
+I3OifhXCLj6NNZN@>Yd32J2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2
+w1693107575
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_adder.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1693109858.000000
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vhalf_sub
+R0
+!i10b 1
+!s100 ANVLGibL;_G5GXkk`>DbS1
+IATeDHkc9K@;S:P2Gg<Ghk3
+R1
+R2
+w1693107566
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_subtractor.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_subtractor.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_subtractor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/half_subtractor.v|
+!i113 1
+R5
+R6
+vMUX
+R0
+!i10b 1
+!s100 m9Z6R]IWV8CSP:jT<h^c90
+IU=VN71m4e3ahN5IH=oo<D0
+R1
+R2
+w1693108688
+8D:\Courses and Workshops\IEEE Digital IC Design Workshop 2023\Tasks\Task 1\Question 2\mux.v
+FD:\Courses and Workshops\IEEE Digital IC Design Workshop 2023\Tasks\Task 1\Question 2\mux.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:\Courses and Workshops\IEEE Digital IC Design Workshop 2023\Tasks\Task 1\Question 2\mux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Courses and Workshops\IEEE Digital IC Design Workshop 2023\Tasks\Task 1\Question 2\mux.v|
+!i113 1
+R5
+R6
+n@m@u@x
+vQ2
+R0
+!i10b 1
+!s100 <dN03lRCmK7Qi:K1fDaU12
+I06jKHl=^CgL2W3@8zM:UN2
+R1
+R2
+w1693109846
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/Q2.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/Q2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/Q2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/Tasks/Task 1/Question 2/Q2.v|
+!i113 1
+R5
+R6
+n@q2
