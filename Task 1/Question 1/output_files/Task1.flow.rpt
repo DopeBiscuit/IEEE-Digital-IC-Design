@@ -1,5 +1,5 @@
 Flow report for Task1
-Sun Aug 27 05:07:18 2023
+Mon Aug 28 03:05:48 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,22 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Aug 27 05:07:18 2023       ;
+; Flow Status                        ; Successful - Mon Aug 28 03:05:48 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Task1                                       ;
 ; Top-level Entity Name              ; Task1                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2 / 6,272 ( < 1 % )                         ;
-;     Total combinational functions  ; 2 / 6,272 ( < 1 % )                         ;
-;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
+; Total logic elements               ; 2                                           ;
+;     Total combinational functions  ; 2                                           ;
+;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 6 / 92 ( 7 % )                              ;
+; Total pins                         ; 6                                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
-; Device                             ; EP4CE6E22C6                                 ;
-; Timing Models                      ; Final                                       ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/27/2023 05:04:27 ;
+; Start date & time ; 08/28/2023 03:05:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Task1               ;
 +-------------------+---------------------+
@@ -75,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 54991833980219.169310186728492         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 54991833980219.169318113830784         ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -88,10 +86,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4780 MB             ; 00:00:09                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 6456 MB             ; 00:00:02                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4668 MB             ; 00:00:00                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:11                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4771 MB             ; 00:00:09                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,8 +97,6 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; Boody            ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Boody            ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Boody            ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -110,8 +104,6 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Task1 -c Task1
-quartus_fit --read_settings_files=on --write_settings_files=off Task1 -c Task1
-quartus_asm --read_settings_files=on --write_settings_files=off Task1 -c Task1
 
 
 
