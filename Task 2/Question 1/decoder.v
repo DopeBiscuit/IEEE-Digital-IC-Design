@@ -1,0 +1,12 @@
+module DECODER (A, ENB, Y);
+	input [2:0] A;
+	input ENB;
+	output reg [7:0] Y;
+	
+	always @ (*) begin
+		Y = 0;
+		
+		if (ENB) 
+			Y[A] = 1;
+	end
+endmodule

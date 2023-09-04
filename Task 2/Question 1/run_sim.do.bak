@@ -1,0 +1,6 @@
+vlib work
+vlog Decoder.v Decoder_tb.v
+vsim -voptargs=+acc work.Decoder_tb.v
+add wave *
+run -all
+# quit -sim

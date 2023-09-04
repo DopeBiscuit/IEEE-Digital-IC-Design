@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vDECODER
+Z0 !s110 1693813415
+!i10b 1
+!s100 ;ZZlDQ=<lfGcE[Nn_6J:W0
+IIV;[]_lIzoG0nbR<UjYUV2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 1
+w1693422608
+8decoder.v
+Fdecoder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1693813415.000000
+Z5 !s107 decoder_tb.v|decoder.v|
+Z6 !s90 -reportprogress|300|decoder.v|decoder_tb.v|
+!i113 1
+Z7 tCvgOpt 0
+n@d@e@c@o@d@e@r
+vDECODER_TESTBENCH
+R0
+!i10b 1
+!s100 KGU[a:2YL<fD:zoN8gocE1
+IZCFUGco8XGN_88<nAeEam0
+R1
+R2
+w1693812485
+8decoder_tb.v
+Fdecoder_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@d@e@c@o@d@e@r_@t@e@s@t@b@e@n@c@h

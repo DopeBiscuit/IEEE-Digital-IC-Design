@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vcomparator
+Z0 !s110 1693830652
+!i10b 1
+!s100 azHd>=VkY=M9R;7l@W51M1
+I>R^JFAR6bXh]dE@<c:Tee0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2
+w1693829849
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1693830652.000000
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vcomparator_tb
+R0
+!i10b 1
+!s100 14kld<^2ha[:fM61Z4^^a1
+I6^MnMnCfb>TTkj6>L7_jM3
+R1
+R2
+w1693830640
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator_tb.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1693830651.000000
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator_tb.v|
+!i113 1
+R4
+R5

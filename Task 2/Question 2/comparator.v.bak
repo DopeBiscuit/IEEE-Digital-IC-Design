@@ -1,0 +1,35 @@
+module comparator (A, B, C, OUT1, OUT2);
+	parameter n = 5;
+	input [n-1: 0] A, B, C;
+	output reg [(2 * n) - 1: 0] OUT1, OUT2;
+
+	
+	
+	always @ (*) begin
+		
+		if(A == B && B == C) begin 
+			OUT1 = A << 2;
+			OUT2 = A >> 2;
+		end
+		else if (A > B) begin
+			if (C > A) begin
+				OUT1 = {n {1'b C[n-1]}, C};
+				OUT2 = {A, B};
+			end
+			else begin
+				OUT1 = {n {1'b A[n-1]}, A};
+				OUT2 = {C, B};
+			end
+		end
+		else begin
+			if (C > B) begin
+				OUT1 = {n {1'b C[n-1]}, C};
+				OUT2 = {A, B};			
+			end
+			else begin
+				OUT1 = {n {1'b B[n-1]}, B};
+				OUT2 = {C, B};
+			end
+		end
+	end
+endmodule

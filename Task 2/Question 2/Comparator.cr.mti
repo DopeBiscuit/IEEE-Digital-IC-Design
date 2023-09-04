@@ -1,0 +1,15 @@
+{D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator_tb.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 2/Question 2/comparator_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module comparator_tb
+
+Top level modules:
+	comparator_tb
+
+} {} {}}
