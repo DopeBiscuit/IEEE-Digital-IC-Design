@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Sep 05 10:00:38 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : comparator
+Top-level Entity Name : comparator
+Family : Cyclone IV E
+Total logic elements : 73
+    Total combinational functions : 73
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 35
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

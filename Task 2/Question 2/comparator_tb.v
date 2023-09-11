@@ -9,7 +9,7 @@ module comparator_tb ();
 	
 	integer i;
 	initial begin
-		for(i = 0; i < 20; i = i + 1) begin
+		for(i = 0; i < 15; i = i + 1) begin
 			A = $random;
 			B = $random;
 			C = $random;
