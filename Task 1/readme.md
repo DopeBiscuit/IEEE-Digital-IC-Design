@@ -1,1 +1,0 @@
-**This task was an introduction to verilog, and how to use it to make basic modules, how to interact with modelsim and quartus to see logic circuit design and to compile and see wave simulation of the code.**
