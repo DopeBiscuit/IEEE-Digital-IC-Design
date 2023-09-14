@@ -3,10 +3,10 @@
 
 
 ## Lecture 1 - Intro to:
--  <p style="font-weight: 400;">Introduction to verilog and it's concurrent behaviour.
+-  Introduction to verilog and it's concurrent behaviour.
 -  Syntax, logical operators, arithmetic operators and modules.
 -  Gate-level design.
--  Structural design.</p>
+-  Structural design.
 
 ## Task 1: 
 - **Basic Logic circuits using Gate-level and Structural design**
