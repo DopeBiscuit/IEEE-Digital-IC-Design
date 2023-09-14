@@ -16,12 +16,14 @@ module vga_controller (
 	
 	// Initialize variables
 	initial begin
+		#20;
 		pixel_x = 0;
 		pixel_y = 0;
 		RGB = color;
 		video_on = 1;
 		h_sync = 1;
 		v_sync = 1;
+		breakpoint = 0;
 	end
 	
 	always @ (posedge clk) begin
@@ -41,6 +43,7 @@ module vga_controller (
 			pixel_y = ((pixel_y + !(pixel_x)) == 525) ? 0 : pixel_y + !(pixel_x);
 			video_on = ((pixel_x < 640) && (pixel_y < 480));
 			breakpoint = (!pixel_x && !pixel_y);
+			RGB = (video_on) ? color : 3'b000;
 			
 			// Updating outputs based on the changes of the X and Y.
 			if (pixel_x >= 656 && pixel_x < 752) 

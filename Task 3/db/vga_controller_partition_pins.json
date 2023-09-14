@@ -12,6 +12,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "RGB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB[1]",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},
