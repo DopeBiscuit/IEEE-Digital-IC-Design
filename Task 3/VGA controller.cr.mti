@@ -1,0 +1,8 @@
+{D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 3/vga_tb.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Task 3/vga_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module vga_controller_tb
+
+Top level modules:
+	vga_controller_tb
+
+} {} {}}

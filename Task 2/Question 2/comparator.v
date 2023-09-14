@@ -25,7 +25,7 @@ module comparator (A, B, C, OUT1, OUT2);
 				OUT2 = {B, C};
 			end
 		end
-		else if (A == B) begin
+		else if (A == B  && A > C) begin
 				OUT1 = 0;
 				OUT2 = 0;
 		end
