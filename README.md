@@ -1,4 +1,4 @@
-<div align="center"><img src="https://i.imgur.com/Ba9CDl0.jpg" alt="IEEE ASUSB logo" width="400" height="400"/></div>
+<div align="center"><img src="https://i.imgur.com/Ba9CDl0.jpg" alt="IEEE ASUSB logo" width="300" height="300"/></div>
 
 # IEEE-Digital-IC-Design
 **This repo is for my IEEE Digital IC Design workshop, an introduction to digital design using verilog, and this is a documentation of my tasks, all folders include pdf with the task's requirements.**
