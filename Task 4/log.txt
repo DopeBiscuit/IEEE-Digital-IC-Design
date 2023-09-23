@@ -1,0 +1,54 @@
+UART output log, the OUT is the output variable of the read data from the rx block, so the printed data is the data generated from the TX read by the RX
+
+There is a slight problem in the very first bit in the simulation due to the idle state of the TX
+
+# word = 00000000 OUT = 00000000 counter =  0  tx = 1
+# word = 00000001 OUT = 00000001 counter =  1  tx = 0
+# word = 00000001 OUT = 00000001 counter =  2  tx = 0
+# word = 00000001 OUT = 00000001 counter =  3  tx = 0
+# word = 00000001 OUT = 00000001 counter =  4  tx = 0
+# word = 00000001 OUT = 00000001 counter =  5  tx = 0
+# word = 00000001 OUT = 00000001 counter =  6  tx = 0
+# word = 00000001 OUT = 00000001 counter =  7  tx = 0
+# word = 00000001 OUT = 00000001 counter =  8  tx = 0
+# word = 00000001 OUT = 00000001 counter =  9  tx = 1
+# word = 00000000 OUT = 00000000 counter =  0  tx = 0
+# word = 00000000 OUT = 00000000 counter =  1  tx = 1
+# word = 00000010 OUT = 00000010 counter =  2  tx = 0
+# word = 00000010 OUT = 00000010 counter =  3  tx = 0
+# word = 00000010 OUT = 00000010 counter =  4  tx = 0
+# word = 00000010 OUT = 00000010 counter =  5  tx = 0
+# word = 00000010 OUT = 00000010 counter =  6  tx = 0
+# word = 00000010 OUT = 00000010 counter =  7  tx = 0
+# word = 00000010 OUT = 00000010 counter =  8  tx = 0
+# word = 00000010 OUT = 00000010 counter =  9  tx = 1
+# word = 00000000 OUT = 00000000 counter =  0  tx = 0
+# word = 00000000 OUT = 00000000 counter =  1  tx = 0
+# word = 00000000 OUT = 00000000 counter =  2  tx = 1
+# word = 00000100 OUT = 00000100 counter =  3  tx = 0
+# word = 00000100 OUT = 00000100 counter =  4  tx = 0
+# word = 00000100 OUT = 00000100 counter =  5  tx = 0
+# word = 00000100 OUT = 00000100 counter =  6  tx = 0
+# word = 00000100 OUT = 00000100 counter =  7  tx = 0
+# word = 00000100 OUT = 00000100 counter =  8  tx = 0
+# word = 00000100 OUT = 00000100 counter =  9  tx = 1
+# word = 00000000 OUT = 00000000 counter =  0  tx = 0
+# word = 00000000 OUT = 00000000 counter =  1  tx = 1
+# word = 00000010 OUT = 00000010 counter =  2  tx = 1
+# word = 00000110 OUT = 00000110 counter =  3  tx = 0
+# word = 00000110 OUT = 00000110 counter =  4  tx = 0
+# word = 00000110 OUT = 00000110 counter =  5  tx = 0
+# word = 00000110 OUT = 00000110 counter =  6  tx = 0
+# word = 00000110 OUT = 00000110 counter =  7  tx = 0
+# word = 00000110 OUT = 00000110 counter =  8  tx = 0
+# word = 00000110 OUT = 00000110 counter =  9  tx = 1
+# word = 00000000 OUT = 00000000 counter =  0  tx = 0
+# word = 00000000 OUT = 00000000 counter =  1  tx = 0
+# word = 00000000 OUT = 00000000 counter =  2  tx = 0
+# word = 00000000 OUT = 00000000 counter =  3  tx = 1
+# word = 00001000 OUT = 00001000 counter =  4  tx = 0
+# word = 00001000 OUT = 00001000 counter =  5  tx = 0
+# word = 00001000 OUT = 00001000 counter =  6  tx = 0
+# word = 00001000 OUT = 00001000 counter =  7  tx = 0
+# word = 00001000 OUT = 00001000 counter =  8  tx = 0
+# word = 00001000 OUT = 00001000 counter =  9  tx = 1

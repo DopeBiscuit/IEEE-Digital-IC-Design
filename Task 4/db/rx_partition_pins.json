@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "word[0]",
+					"strict" : false
+				},
+				{
+					"name" : "word[1]",
+					"strict" : false
+				},
+				{
+					"name" : "word[2]",
+					"strict" : false
+				},
+				{
+					"name" : "word[3]",
+					"strict" : false
+				},
+				{
+					"name" : "word[4]",
+					"strict" : false
+				},
+				{
+					"name" : "word[5]",
+					"strict" : false
+				},
+				{
+					"name" : "word[6]",
+					"strict" : false
+				},
+				{
+					"name" : "word[7]",
+					"strict" : false
+				},
+				{
+					"name" : "tx",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

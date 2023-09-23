@@ -1,0 +1,23 @@
+|rx
+tx => word[0]$latch.DATAIN
+tx => word[1]$latch.DATAIN
+tx => word[2]$latch.DATAIN
+tx => word[3]$latch.DATAIN
+tx => word[4]$latch.DATAIN
+tx => word[5]$latch.DATAIN
+tx => word[6]$latch.DATAIN
+tx => word[7]$latch.DATAIN
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+word[0] <= word[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+word[1] <= word[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+word[2] <= word[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+word[3] <= word[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+word[4] <= word[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+word[5] <= word[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+word[6] <= word[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+word[7] <= word[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
