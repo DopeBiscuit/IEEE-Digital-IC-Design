@@ -23,7 +23,7 @@ module rx (
 	end
 	
 	// Demux output logic
-	always @ (counter or posedge reset) begin
+	always @ (posedge clk or posedge reset) begin
 		if (reset)
 			word <= 'b0;
 		else if (!counter) 
