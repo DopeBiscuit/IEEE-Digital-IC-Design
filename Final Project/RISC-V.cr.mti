@@ -1,17 +1,28 @@
 {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Imem
--- Compiling module tb_Imem
+-- Compiling module imem
 
 Top level modules:
-	tb_Imem
+	imem
 
 } {} {}} {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Dmem
--- Compiling module tb_Dmem
+-- Compiling module dmem
 
 Top level modules:
-	tb_Dmem
+	dmem
+
+} {} {}} {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v} {1 {vlog -work work -stats=none {D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+-- Compiling module imm_extender
+-- Compiling module mux2
+-- Compiling module adder
+-- Compiling module flop_register
+-- Compiling module mux3
+-- Compiling module alu
+
+Top level modules:
+	datapath
 
 } {} {}}

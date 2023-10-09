@@ -1,4 +1,4 @@
-module Imem(
+module imem(
     input [5:0] addr,  // address
     output wire [31:0] inst  // instruction
     );
@@ -12,30 +12,3 @@ module Imem(
 
     assign inst = mem[addr];  // assign instruction
 endmodule
-
-
-module tb_Imem();
-reg [5:0] addr; // address
-wire [31:0] inst;  // instruction
-
-
-Imem DUT (
-    .addr (addr), 
-    .inst (inst)
-); // instantiate DUT
-
-integer i; 
-initial begin
-    for (i = 0; i < 10; i = i + 1) begin
-        addr = $random % 64;
-        #5;
-    end
-    $stop;
-end
-
-initial begin
-    $monitor("inst=%h, addr=%d", inst, addr);
-end
-
-endmodule
-`default_nettype wire
