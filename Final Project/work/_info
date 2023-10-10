@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA/18.1
 vadder
-Z0 !s110 1696937218
+Z0 !s110 1696946833
 !i10b 1
 !s100 VV>nU]1z?IW^GlimS>ZWY1
 IXfkFn1z6dRkl<c6Q_bBOO3
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1696937218.000000
+Z7 !s108 1696946833.000000
 Z8 !s107 reg_file.v|datapath.v|Dmem.v|controller.v|Imem.v|RISC-V.v|
 Z9 !s90 -reportprogress|300|RISC-V.v|Imem.v|controller.v|Dmem.v|datapath.v|reg_file.v|
 !i113 1
@@ -128,6 +128,26 @@ R8
 R9
 !i113 1
 R10
+vdmem
+R0
+!i10b 1
+!s100 o:@?4]e>VFnQH5[C1e`9<2
+I8dV9:UNc2UJZ]m^eHLF4k0
+R1
+R2
+w1696936250
+8Dmem.v
+FDmem.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
 vDmem
 Z14 !s110 1696778025
 !i10b 1
@@ -150,26 +170,6 @@ Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEE
 Z21 o-work work
 R10
 n@dmem
-vdmem
-R0
-!i10b 1
-!s100 o:@?4]e>VFnQH5[C1e`9<2
-I8dV9:UNc2UJZ]m^eHLF4k0
-R1
-R2
-w1696936250
-8Dmem.v
-FDmem.v
-L0 1
-R6
-r1
-!s85 0
-31
-R7
-R8
-R9
-!i113 1
-R10
 vflop_register
 R0
 !i10b 1
@@ -181,26 +181,6 @@ R3
 R4
 R5
 L0 149
-R6
-r1
-!s85 0
-31
-R7
-R8
-R9
-!i113 1
-R10
-vimem
-R0
-!i10b 1
-!s100 WkR6I^7FXk=B@LW<HVBz22
-If9LOO2_I6U]DWeg;EQ88b2
-R1
-R2
-w1696930204
-8Imem.v
-FImem.v
-L0 1
 R6
 r1
 !s85 0
@@ -232,6 +212,26 @@ Z28 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEE
 R21
 R10
 n@imem
+vimem
+R0
+!i10b 1
+!s100 WkR6I^7FXk=B@LW<HVBz22
+If9LOO2_I6U]DWeg;EQ88b2
+R1
+R2
+w1696930204
+8Imem.v
+FImem.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
 vimm_extender
 R0
 !i10b 1
@@ -394,6 +394,27 @@ R33
 !i113 1
 R21
 R10
+vtb_dmem
+R32
+!i10b 1
+!s100 ;J<?I;6k3EDAc9QHG94`90
+IRMCK<OF=;h1[HfDoJb^110
+R1
+R2
+w1696863321
+R16
+R17
+Z34 L0 27
+R6
+r1
+!s85 0
+31
+R33
+R19
+R20
+!i113 1
+R21
+R10
 vtb_Dmem
 R14
 !i10b 1
@@ -404,7 +425,7 @@ R2
 R15
 R16
 R17
-Z34 L0 27
+R34
 R6
 r1
 !s85 0
@@ -416,48 +437,6 @@ R20
 R21
 R10
 ntb_@dmem
-vtb_dmem
-R32
-!i10b 1
-!s100 ;J<?I;6k3EDAc9QHG94`90
-IRMCK<OF=;h1[HfDoJb^110
-R1
-R2
-w1696863321
-R16
-R17
-R34
-R6
-r1
-!s85 0
-31
-R33
-R19
-R20
-!i113 1
-R21
-R10
-vtb_imem
-R32
-!i10b 1
-!s100 g6kRXFEQ;maYG5=@SYS_e1
-IJ<f0ITDJU]HDb5d4n[;KS1
-R1
-R2
-w1696860853
-R24
-R25
-Z35 L0 17
-R6
-r1
-!s85 0
-31
-!s108 1696875648.000000
-R27
-R28
-!i113 1
-R21
-R10
 vtb_Imem
 R22
 !i10b 1
@@ -468,7 +447,7 @@ R2
 R23
 R24
 R25
-R35
+Z35 L0 17
 R6
 r1
 !s85 0
@@ -480,6 +459,27 @@ R28
 R21
 R10
 ntb_@imem
+vtb_imem
+R32
+!i10b 1
+!s100 g6kRXFEQ;maYG5=@SYS_e1
+IJ<f0ITDJU]HDb5d4n[;KS1
+R1
+R2
+w1696860853
+R24
+R25
+R35
+R6
+r1
+!s85 0
+31
+!s108 1696875648.000000
+R27
+R28
+!i113 1
+R21
+R10
 vtb_reg_file
 R32
 !i10b 1

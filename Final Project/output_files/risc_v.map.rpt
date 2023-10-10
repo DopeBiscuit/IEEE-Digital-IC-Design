@@ -1,0 +1,455 @@
+Analysis & Synthesis report for risc_v
+Tue Oct 10 14:40:05 2023
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: processor:risc|datapath:dp|flop_register:pc_reg
+ 11. Parameter Settings for User Entity Instance: processor:risc|datapath:dp|mux2:pcmux
+ 12. Parameter Settings for User Entity Instance: processor:risc|datapath:dp|mux2:srcbmux
+ 13. Parameter Settings for User Entity Instance: processor:risc|datapath:dp|mux3:resultmux
+ 14. Port Connectivity Checks: "processor:risc|datapath:dp|adder:pcplus4"
+ 15. Port Connectivity Checks: "processor:risc"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Oct 10 14:40:05 2023       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; risc_v                                      ;
+; Top-level Entity Name              ; risc_v                                      ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 6,208                                       ;
+;     Total combinational functions  ; 3,200                                       ;
+;     Dedicated logic registers      ; 3,104                                       ;
+; Total registers                    ; 3104                                        ;
+; Total pins                         ; 67                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; risc_v             ; risc_v             ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
+;     Processors 9-16        ;   0.1%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                    ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; RISC-V.v                         ; yes             ; User Verilog HDL File  ; D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v     ;         ;
+; reg_file.v                       ; yes             ; User Verilog HDL File  ; D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v   ;         ;
+; Imem.v                           ; yes             ; User Verilog HDL File  ; D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v       ;         ;
+; Dmem.v                           ; yes             ; User Verilog HDL File  ; D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v       ;         ;
+; datapath.v                       ; yes             ; User Verilog HDL File  ; D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v   ;         ;
+; controller.v                     ; yes             ; User Verilog HDL File  ; D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v ;         ;
+; imem.txt                         ; yes             ; Auto-Found File        ; D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/imem.txt     ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 6,208     ;
+;                                             ;           ;
+; Total combinational functions               ; 3200      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 2720      ;
+;     -- 3 input functions                    ; 397       ;
+;     -- <=2 input functions                  ; 83        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 3077      ;
+;     -- arithmetic mode                      ; 123       ;
+;                                             ;           ;
+; Total registers                             ; 3104      ;
+;     -- Dedicated logic registers            ; 3104      ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 67        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 3104      ;
+; Total fan-out                               ; 21680     ;
+; Average fan-out                             ; 3.37      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                     ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name    ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+----------------+--------------+
+; |risc_v                                  ; 3200 (0)            ; 3104 (0)                  ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |risc_v                                                           ; risc_v         ; work         ;
+;    |dmem:dmem|                           ; 1424 (1424)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|dmem:dmem                                                 ; dmem           ; work         ;
+;    |imem:imem|                           ; 50 (50)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|imem:imem                                                 ; imem           ; work         ;
+;    |processor:risc|                      ; 1726 (0)            ; 1056 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc                                            ; processor      ; work         ;
+;       |controller:c|                     ; 41 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|controller:c                               ; controller     ; work         ;
+;          |alu_controller:alu_controller| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|controller:c|alu_controller:alu_controller ; alu_controller ; work         ;
+;          |decoder:main_decoder|          ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|controller:c|decoder:main_decoder          ; decoder        ; work         ;
+;       |datapath:dp|                      ; 1685 (0)            ; 1056 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp                                ; datapath       ; work         ;
+;          |adder:pcaddbranch|             ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp|adder:pcaddbranch              ; adder          ; work         ;
+;          |adder:pcplus4|                 ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp|adder:pcplus4                  ; adder          ; work         ;
+;          |alu:alu|                       ; 547 (547)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp|alu:alu                        ; alu            ; work         ;
+;          |flop_register:pc_reg|          ; 35 (35)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp|flop_register:pc_reg           ; flop_register  ; work         ;
+;          |imm_extender:imm_extender|     ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp|imm_extender:imm_extender      ; imm_extender   ; work         ;
+;          |mux2:srcbmux|                  ; 37 (37)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp|mux2:srcbmux                   ; mux2           ; work         ;
+;          |mux3:resultmux|                ; 67 (67)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp|mux3:resultmux                 ; mux3           ; work         ;
+;          |reg_file:reg_file|             ; 915 (915)           ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |risc_v|processor:risc|datapath:dp|reg_file:reg_file              ; reg_file       ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 3104  ;
+; Number of registers using Synchronous Clear  ; 30    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 3074  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |risc_v|processor:risc|datapath:dp|flop_register:pc_reg|data_out[0]  ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |risc_v|processor:risc|datapath:dp|flop_register:pc_reg|data_out[13] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |risc_v|processor:risc|datapath:dp|mux3:resultmux|y[0]               ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 40 LEs               ; 16 LEs                 ; No         ; |risc_v|processor:risc|datapath:dp|alu:alu|Mux8                      ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 40 LEs               ; 16 LEs                 ; No         ; |risc_v|processor:risc|datapath:dp|alu:alu|Mux17                     ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |risc_v|processor:risc|datapath:dp|alu:alu|Mux6                      ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |risc_v|processor:risc|datapath:dp|alu:alu|Mux27                     ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |risc_v|processor:risc|datapath:dp|alu:alu|Mux2                      ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |risc_v|processor:risc|datapath:dp|alu:alu|Mux29                     ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 14 LEs               ; 4 LEs                  ; No         ; |risc_v|processor:risc|datapath:dp|alu:alu|Mux0                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:risc|datapath:dp|flop_register:pc_reg ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:risc|datapath:dp|mux2:pcmux ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:risc|datapath:dp|mux2:srcbmux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:risc|datapath:dp|mux3:resultmux ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:risc|datapath:dp|adder:pcplus4" ;
++----------+-------+----------+----------------------------------------+
+; Port     ; Type  ; Severity ; Details                                ;
++----------+-------+----------+----------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                           ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                           ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                           ;
++----------+-------+----------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:risc"                                                                          ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pc[31..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pc[1..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 67                          ;
+; cycloneiii_ff         ; 3104                        ;
+;     ENA               ; 3074                        ;
+;     SCLR              ; 30                          ;
+; cycloneiii_lcell_comb ; 3200                        ;
+;     arith             ; 123                         ;
+;         2 data inputs ; 29                          ;
+;         3 data inputs ; 94                          ;
+;     normal            ; 3077                        ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 303                         ;
+;         4 data inputs ; 2720                        ;
+;                       ;                             ;
+; Max LUT depth         ; 22.00                       ;
+; Average LUT depth     ; 14.27                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:09     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Oct 10 14:39:45 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off risc_v -c risc_v
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tb_reg_file.v
+    Info (12023): Found entity 1: tb_reg_file File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/tb_reg_file.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_imem.v
+    Info (12023): Found entity 1: tb_imem File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/tb_imem.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_dmem.v
+    Info (12023): Found entity 1: tb_dmem File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/tb_dmem.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_datapath.v
+    Info (12023): Found entity 1: tb_datapath File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/tb_datapath.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_controller.v
+    Info (12023): Found entity 1: tb_controller File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/tb_controller.v Line: 1
+Info (12021): Found 3 design units, including 3 entities, in source file risc-v.v
+    Info (12023): Found entity 1: risc_v File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v Line: 1
+    Info (12023): Found entity 2: processor File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v Line: 42
+    Info (12023): Found entity 3: tb_risc_v File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v Line: 97
+Info (12021): Found 1 design units, including 1 entities, in source file reg_file.v
+    Info (12023): Found entity 1: reg_file File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file imem.v
+    Info (12023): Found entity 1: imem File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
+    Info (12023): Found entity 1: dmem File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v Line: 1
+Info (12021): Found 7 design units, including 7 entities, in source file datapath.v
+    Info (12023): Found entity 1: datapath File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 1
+    Info (12023): Found entity 2: imm_extender File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 106
+    Info (12023): Found entity 3: mux2 File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 127
+    Info (12023): Found entity 4: adder File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 140
+    Info (12023): Found entity 5: flop_register File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 149
+    Info (12023): Found entity 6: mux3 File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 173
+    Info (12023): Found entity 7: alu File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 186
+Info (12021): Found 3 design units, including 3 entities, in source file controller.v
+    Info (12023): Found entity 1: controller File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v Line: 1
+    Info (12023): Found entity 2: decoder File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v Line: 43
+    Info (12023): Found entity 3: alu_controller File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v Line: 72
+Info (12127): Elaborating entity "risc_v" for the top level hierarchy
+Info (12128): Elaborating entity "processor" for hierarchy "processor:risc" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v Line: 25
+Info (12128): Elaborating entity "controller" for hierarchy "processor:risc|controller:c" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v Line: 74
+Info (12128): Elaborating entity "decoder" for hierarchy "processor:risc|controller:c|decoder:main_decoder" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v Line: 28
+Info (12128): Elaborating entity "alu_controller" for hierarchy "processor:risc|controller:c|alu_controller:alu_controller" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v Line: 36
+Info (12128): Elaborating entity "datapath" for hierarchy "processor:risc|datapath:dp" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v Line: 92
+Info (12128): Elaborating entity "reg_file" for hierarchy "processor:risc|datapath:dp|reg_file:reg_file" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 46
+Info (12128): Elaborating entity "imm_extender" for hierarchy "processor:risc|datapath:dp|imm_extender:imm_extender" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 53
+Info (12128): Elaborating entity "flop_register" for hierarchy "processor:risc|datapath:dp|flop_register:pc_reg" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 62
+Info (12128): Elaborating entity "adder" for hierarchy "processor:risc|datapath:dp|adder:pcplus4" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 68
+Info (12128): Elaborating entity "mux2" for hierarchy "processor:risc|datapath:dp|mux2:pcmux" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 81
+Info (12128): Elaborating entity "alu" for hierarchy "processor:risc|datapath:dp|alu:alu" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 96
+Info (12128): Elaborating entity "mux3" for hierarchy "processor:risc|datapath:dp|mux3:resultmux" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v Line: 103
+Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v Line: 30
+Warning (10850): Verilog HDL warning at Imem.v(10): number of words (19) in memory file does not match the number of elements in the address range [0:63] File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v Line: 10
+Warning (10030): Net "mem.data_a" at Imem.v(7) has no driver or initial value, using a default initial value '0' File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v Line: 7
+Warning (10030): Net "mem.waddr_a" at Imem.v(7) has no driver or initial value, using a default initial value '0' File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v Line: 7
+Warning (10030): Net "mem.we_a" at Imem.v(7) has no driver or initial value, using a default initial value '0' File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v Line: 7
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v Line: 38
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "processor:risc|datapath:dp|reg_file:reg_file|registers" is uninferred due to asynchronous read logic File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v Line: 13
+    Info (276007): RAM logic "dmem:dmem|mem" is uninferred due to asynchronous read logic File: D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v Line: 9
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/db/risc_v.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 6339 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 65 output pins
+    Info (21061): Implemented 6272 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4872 megabytes
+    Info: Processing ended: Tue Oct 10 14:40:05 2023
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:12
+
+
