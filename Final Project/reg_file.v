@@ -24,8 +24,8 @@ module reg_file(
 
     // assign register file
     always @(posedge clk) begin
+        #1;
         if (write_enable) begin
-            #1;
             registers[write_reg] <= data_in;
         end
     end

@@ -1,7 +1,7 @@
 module controller (
     input [6:0] op_code, // operation code
     input [2:0] func3, // function code
-    input func7b5, // function code bit 5
+    input func7b6, // function code bit 5
     input zero, // zero flag
     output wire [2:0] alu_control, // ALU control
     output wire alu_src, // ALU source
@@ -28,9 +28,9 @@ module controller (
     );
 
     alu_controller alu_controller (
-        .op5 (op_code[4]),
+        .op_code (op_code),
         .func3 (func3),
-        .func7b5 (func7b5),
+        .func7b6 (func7b6),
         .alu_op (alu_op),
         .alu_control (alu_control)
     );
@@ -70,9 +70,9 @@ module decoder(
 endmodule
 
 module alu_controller (
-    input op5, // operation code bit 5
+    input [6:0] op_code, // operation code bit 5
     input [2:0] func3, // function code
-    input func7b5, // function code bit 5
+    input func7b6, // function code bit 5
     input [1:0] alu_op, // ALU operation
     output reg [2:0] alu_control // ALU control
     );
@@ -82,7 +82,7 @@ module alu_controller (
             2'b00: alu_control <= 3'b000; // add
             2'b01: alu_control <= 3'b001; // subtract
             2'b10: case (func3)
-                3'b000: alu_control <= 3'b000;
+                3'b000: alu_control <= ((op_code == 7'b0110011) && (func7b6 == 1'b1)) ? 3'b001 : 3'b000; // Subtract and add
                 3'b001: alu_control <= 3'b100; // shift left logical
                 3'b010: alu_control <= 3'b101; // set less than
                 3'b101: alu_control <= 3'b111; // shift right logical

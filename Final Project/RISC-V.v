@@ -31,7 +31,7 @@ module risc_v (
 
     dmem dmem (
         .clk (clk),
-        .addr (address[5:0]),
+        .addr (address[7:2]),
         .data_in (write_data),
         .write_enable (mem_write_enable),
         .data_out (read_data)
@@ -62,7 +62,7 @@ module processor(
     controller c(
         .op_code (inst[6:0]),
         .func3 (inst[14:12]),
-        .func7b5 (inst[30]),
+        .func7b6 (inst[30]),
         .zero (zero),
         .alu_control (alu_control),
         .alu_src (alu_src),
@@ -122,12 +122,17 @@ always #(CLK_PERIOD/2) clk=~clk;
 
     integer i = 0;
 
+    // check results
     always @(negedge clk) begin
-        if (i < 10) begin
-            $display("write_data: %h, address: %h, mem_write_enable: %h", write_data, address, mem_write_enable);
-            i = i + 1;
-        end else begin
-            $stop;
+        if(mem_write_enable) begin
+            if(address == 84 & write_data == 71) begin
+                $display("Test passed");
+                $stop;
+            end
+            else begin
+                $display("Test failed");
+                $stop;
+            end
         end
     end
 

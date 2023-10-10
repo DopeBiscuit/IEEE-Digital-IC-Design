@@ -9,31 +9,30 @@ z2
 cModel Technology
 dC:/intelFPGA/18.1
 vadder
-Z0 !s110 1696885176
+Z0 !s110 1696937218
 !i10b 1
 !s100 VV>nU]1z?IW^GlimS>ZWY1
-I8_cXcWQ]b4VT2iB3M`bHi2
+IXfkFn1z6dRkl<c6Q_bBOO3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project
 Z3 w1696878710
-Z4 8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v
-Z5 FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v
+Z4 8datapath.v
+Z5 Fdatapath.v
 L0 140
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1696885176.000000
-Z8 !s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v|
-Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v|
+Z7 !s108 1696937218.000000
+Z8 !s107 reg_file.v|datapath.v|Dmem.v|controller.v|Imem.v|RISC-V.v|
+Z9 !s90 -reportprogress|300|RISC-V.v|Imem.v|controller.v|Dmem.v|datapath.v|reg_file.v|
 !i113 1
-Z10 o-work work
-Z11 tCvgOpt 0
+Z10 tCvgOpt 0
 valu
 R0
 !i10b 1
 !s100 KN1Qg[EQU3]dI@02OF`@^0
-IEzKREmEY;J]RQ=[eAZcJm3
+IUBFhk@V>Gkg140dLiE1ge2
 R1
 R2
 R3
@@ -49,54 +48,51 @@ R8
 R9
 !i113 1
 R10
-R11
 valu_controller
 R0
 !i10b 1
-!s100 DTI]S2l_AFHSkjE`H4kE@0
-IdNdjX^ISZ<E:?mPZTiH5M3
+!s100 4a<0>zVDA2BehCb:QGC321
+IhhNoBNdXE7BOM8PYH`C?U2
 R1
 R2
-Z12 w1696883751
-Z13 8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v
-Z14 FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v
+Z11 w1696937212
+Z12 8controller.v
+Z13 Fcontroller.v
 L0 72
 R6
 r1
 !s85 0
 31
 R7
-Z15 !s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v|
-Z16 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v|
+R8
+R9
 !i113 1
 R10
-R11
 vcontroller
 R0
 !i10b 1
-!s100 2WXBM5G>0az6ZGSoclROm2
-I5Y30=I9P`D87P3C@MA9:P1
+!s100 3TJ6ZJ>70k48_Y7_C0;K53
+I7QYKlVO[Im7?ag]ALe63K2
 R1
 R2
+R11
 R12
 R13
-R14
 L0 1
 R6
 r1
 !s85 0
 31
 R7
-R15
-R16
+R8
+R9
 !i113 1
 R10
-R11
 vdatapath
 R0
 !i10b 1
 !s100 iXkZSU:;_4nzHGo0`h`Na3
-IE@58nVOe4Jj[>5<e4TM8T0
+IlD<VHKC3]OSTRR7RWzkgC2
 R1
 R2
 R3
@@ -112,76 +108,73 @@ R8
 R9
 !i113 1
 R10
-R11
 vdecoder
 R0
 !i10b 1
 !s100 2lcBHiJXlLABTZg[E_Y`I2
-ICf_12iIPJ0NRjY`bXZb?P0
+I6To`1N]0hIhaL^>LWP3W21
 R1
 R2
+R11
 R12
 R13
-R14
 L0 43
 R6
 r1
 !s85 0
 31
 R7
-R15
-R16
+R8
+R9
 !i113 1
 R10
-R11
+vDmem
+Z14 !s110 1696778025
+!i10b 1
+!s100 bIFK[0RL@GAo<d^;92>=z0
+IICcC[gWaWnT1QMQeISY_T0
+R1
+R2
+Z15 w1696688604
+Z16 8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v
+Z17 FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z18 !s108 1696778025.000000
+Z19 !s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v|
+!i113 1
+Z21 o-work work
+R10
+n@dmem
 vdmem
 R0
 !i10b 1
 !s100 o:@?4]e>VFnQH5[C1e`9<2
-Im?F=N=U=NORm1WVIj73__1
+I8dV9:UNc2UJZ]m^eHLF4k0
 R1
 R2
-w1696885115
-Z17 8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v
-Z18 FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v
+w1696936250
+8Dmem.v
+FDmem.v
 L0 1
 R6
 r1
 !s85 0
 31
 R7
-Z19 !s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v|
-Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Dmem.v|
+R8
+R9
 !i113 1
 R10
-R11
-vDmem
-Z21 !s110 1696778025
-!i10b 1
-!s100 bIFK[0RL@GAo<d^;92>=z0
-IICcC[gWaWnT1QMQeISY_T0
-R1
-R2
-Z22 w1696688604
-R17
-R18
-L0 1
-R6
-r1
-!s85 0
-31
-Z23 !s108 1696778025.000000
-R19
-R20
-!i113 1
-R10
-R11
-n@dmem
 vflop_register
 R0
 !i10b 1
 !s100 Q4U:nL1dKAi^61LBD:zOz0
-IR?lNAZE4?azg4h;8<65z:0
+I=V85BfQK7W9D`VTSL`jX=1
 R1
 R2
 R3
@@ -197,55 +190,53 @@ R8
 R9
 !i113 1
 R10
-R11
-vImem
-Z24 !s110 1696778024
-!i10b 1
-!s100 YXLOOzJ_bKJ2@=P=X9P:o0
-IYAZ=QTFW1KnCT2TmIQR3A1
-R1
-R2
-Z25 w1696683593
-Z26 8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v
-Z27 FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v
-L0 1
-R6
-r1
-!s85 0
-31
-Z28 !s108 1696778024.000000
-Z29 !s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v|
-Z30 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v|
-!i113 1
-R10
-R11
-n@imem
 vimem
 R0
 !i10b 1
 !s100 WkR6I^7FXk=B@LW<HVBz22
-IXVzXjV5[ESaA<Q[B>UkAC0
+If9LOO2_I6U]DWeg;EQ88b2
 R1
 R2
-w1696877961
-R26
-R27
+w1696930204
+8Imem.v
+FImem.v
 L0 1
 R6
 r1
 !s85 0
 31
 R7
-R29
-R30
+R8
+R9
 !i113 1
 R10
-R11
+vImem
+Z22 !s110 1696778024
+!i10b 1
+!s100 YXLOOzJ_bKJ2@=P=X9P:o0
+IYAZ=QTFW1KnCT2TmIQR3A1
+R1
+R2
+Z23 w1696683593
+Z24 8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v
+Z25 FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z26 !s108 1696778024.000000
+Z27 !s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/Imem.v|
+!i113 1
+R21
+R10
+n@imem
 vimm_extender
 R0
 !i10b 1
 !s100 @F34>ocYT_V0MaHKA0j=O2
-Il[GCkSZ>PbHQeB3_[RWiI3
+I07U`bCe6E_`>Rc:o0:Mad0
 R1
 R2
 R3
@@ -261,12 +252,11 @@ R8
 R9
 !i113 1
 R10
-R11
 vmux2
 R0
 !i10b 1
 !s100 0JCR@d`ETU1ODZ=;P>nhE2
-IhB]HNQ_dLm95Sa]:JlVlj3
+InO=>XTg7S:5?;l`NlK:1a2
 R1
 R2
 R3
@@ -282,12 +272,11 @@ R8
 R9
 !i113 1
 R10
-R11
 vmux3
 R0
 !i10b 1
 !s100 ^T:cI6J0W:8aFmBFOO7f13
-IIYdmIfi<AD^c]QcPjZ7P;0
+I5kfoh7j3XJH65g2^IbTVh1
 R1
 R2
 R3
@@ -303,237 +292,232 @@ R8
 R9
 !i113 1
 R10
-R11
 vprocessor
-Z31 !s110 1696885177
+R0
 !i10b 1
-!s100 o<oi_eI@YgZ<@zb]jFKE`0
-IWE]U6gdEUUci^jl2jzlnd0
+!s100 AXXc1Bf?Rlk<[aPlmQHGh3
+IBoTO2bzH_NI@KL<M=aOMi2
 R1
 R2
-Z32 w1696883753
-Z33 8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v
-Z34 FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v
+Z29 w1696937210
+Z30 8RISC-V.v
+Z31 FRISC-V.v
 L0 42
 R6
 r1
 !s85 0
 31
-Z35 !s108 1696885177.000000
-Z36 !s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v|
-Z37 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/RISC-V.v|
+R7
+R8
+R9
 !i113 1
 R10
-R11
 vreg_file
 R0
 !i10b 1
-!s100 hGUGP;<3bPEV14emP<:6K1
-INN37:S1[9Zi9NAYjgVXWB3
+!s100 OOPe<DZ:zJg1MWc]B_W`M1
+IP:<OP=^:b;E1DK=ncIk1e0
 R1
 R2
-w1696882304
-Z38 8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v
-Z39 FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v
+w1696937213
+8reg_file.v
+Freg_file.v
 L0 1
 R6
 r1
 !s85 0
 31
 R7
-Z40 !s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v|
-Z41 !s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v|
+R8
+R9
 !i113 1
 R10
-R11
 vrisc_v
-R31
+R0
 !i10b 1
-!s100 MW:4ah53g@hHZL@j835521
-Ii9hbJ22=R_QalBSz[=SZ`0
+!s100 IPz[nYA^Ah66nEJfmeUi>1
+IoV5Em10YiS4mWFYGJB@AL0
 R1
 R2
-R32
-R33
-R34
+R29
+R30
+R31
 L0 1
 R6
 r1
 !s85 0
 31
-R35
-R36
-R37
+R7
+R8
+R9
 !i113 1
 R10
-R11
 vtb_controller
-Z42 !s110 1696875649
+Z32 !s110 1696875649
 !i10b 1
 !s100 iE]ehIkZCV7YLRPCNXEL_0
 IIYJ`XazJR45W6ek<ef@hU3
 R1
 R2
 w1696865955
-R13
-R14
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v
 L0 100
 R6
 r1
 !s85 0
 31
-Z43 !s108 1696875649.000000
-R15
-R16
+Z33 !s108 1696875649.000000
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/controller.v|
 !i113 1
+R21
 R10
-R11
 vtb_datapath
-R42
+R32
 !i10b 1
 !s100 ZMU8obzPIT4Y^gGS6D4aQ2
 IX?5Z9?AC`4e0FH0C4ZR@50
 R1
 R2
 w1696872779
-R4
-R5
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v
 L0 245
 R6
 r1
 !s85 0
 31
-R43
-R8
-R9
+R33
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/datapath.v|
 !i113 1
+R21
 R10
-R11
+vtb_Dmem
+R14
+!i10b 1
+!s100 40kKjnkhYcFdi1Zb@MShE0
+IjnkVFl:AL;VNDiBmK;7L_1
+R1
+R2
+R15
+R16
+R17
+Z34 L0 27
+R6
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R21
+R10
+ntb_@dmem
 vtb_dmem
-R42
+R32
 !i10b 1
 !s100 ;J<?I;6k3EDAc9QHG94`90
 IRMCK<OF=;h1[HfDoJb^110
 R1
 R2
 w1696863321
+R16
 R17
-R18
-Z44 L0 27
+R34
 R6
 r1
 !s85 0
 31
-R43
+R33
 R19
 R20
 !i113 1
-R10
-R11
-vtb_Dmem
 R21
-!i10b 1
-!s100 40kKjnkhYcFdi1Zb@MShE0
-IjnkVFl:AL;VNDiBmK;7L_1
-R1
-R2
-R22
-R17
-R18
-R44
-R6
-r1
-!s85 0
-31
-R23
-R19
-R20
-!i113 1
 R10
-R11
-ntb_@dmem
-vtb_Imem
-R24
-!i10b 1
-!s100 F5NnOQoCh3e5U_75og_Zg3
-Ib[O@9o`D5zP@3YfKF29mK2
-R1
-R2
-R25
-R26
-R27
-Z45 L0 17
-R6
-r1
-!s85 0
-31
-R28
-R29
-R30
-!i113 1
-R10
-R11
-ntb_@imem
 vtb_imem
-R42
+R32
 !i10b 1
 !s100 g6kRXFEQ;maYG5=@SYS_e1
 IJ<f0ITDJU]HDb5d4n[;KS1
 R1
 R2
 w1696860853
-R26
-R27
-R45
+R24
+R25
+Z35 L0 17
 R6
 r1
 !s85 0
 31
 !s108 1696875648.000000
-R29
-R30
+R27
+R28
 !i113 1
+R21
 R10
-R11
+vtb_Imem
+R22
+!i10b 1
+!s100 F5NnOQoCh3e5U_75og_Zg3
+Ib[O@9o`D5zP@3YfKF29mK2
+R1
+R2
+R23
+R24
+R25
+R35
+R6
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R21
+R10
+ntb_@imem
 vtb_reg_file
-R42
+R32
 !i10b 1
 !s100 34oF>>RZ@M7O3XdH@0fIE3
 IW53?K61hzk<;6^YL=b@Q92
 R1
 R2
 w1696875603
-R38
-R39
+8D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v
+FD:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v
 L0 39
 R6
 r1
 !s85 0
 31
-R43
-R40
-R41
+R33
+!s107 D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Courses and Workshops/IEEE Digital IC Design Workshop 2023/IEEE-Digital-IC-Design/Final Project/reg_file.v|
 !i113 1
+R21
 R10
-R11
 vtb_risc_v
-R31
+R0
 !i10b 1
-!s100 IU7K4G[CNPgOoHG?2ZJ=J1
-IQGEFT_?n4No7G0V^Iz6iV2
+!s100 ?5K>cR5L4dmJWXf`M7QGE0
+IXg4QFk_NKcjdCZn[lF?e63
 R1
 R2
-R32
-R33
-R34
+R29
+R30
+R31
 L0 97
 R6
 r1
 !s85 0
 31
-R35
-R36
-R37
+R7
+R8
+R9
 !i113 1
 R10
-R11
